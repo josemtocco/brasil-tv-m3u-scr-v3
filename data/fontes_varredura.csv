@@ -1,0 +1,8 @@
+Fonte,Categoria,URL,Uso
+Mapa TVU,universitarias,https://www.mapatvu.org.br/index.php/mapa/mapa-detalhado,190 TVUs em atividade; fonte de descoberta
+Câmara dos Deputados,legislativa,https://www.camara.leg.br/tv/como-sintonizar,Tabela de TV Câmara em sinal aberto
+Câmara dos Deputados,legislativa,https://www2.camara.leg.br/comunicacao/assessoria-de-imprensa/releases/01-07-26-tv-camara-entra-no-ar-em-46-novas-cidades-no-primeiro-semestre-deste-ano,46 novas cidades no 1º semestre de 2026
+Ministério das Comunicações,tv_aberta,https://www.gov.br/mcom/pt-br/assuntos/radio-e-tv-aberta/servicos_radiodifusao/rtv_rtvd,Serviço RTV/RTVD
+Ministério das Comunicações,tv_aberta,https://www.gov.br/mcom/pt-br/assuntos/radio-e-tv-aberta/pno_rtv,PNO RTV
+Ministério das Comunicações,tv_publica,https://www.gov.br/mcom/pt-br/noticias/noticias_alt/2026/setembro/brasil-digital-preve-novas-estacoes-de-transmissao-de-tv-digital,Brasil Digital; canais públicos
+IPTV-org,referencia,https://github.com/iptv-org/iptv/blob/master/streams/br.m3u,Somente comparação/descoberta; não promove stream automaticamente

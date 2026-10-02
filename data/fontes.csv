@@ -1,0 +1,6 @@
+fonte,tipo,prioridade,url,uso
+IPTV-org,playlist_publica,alta,https://github.com/iptv-org/iptv,descoberta e comparacao
+Mapa TVU,universidades,alta,https://www.mapatvu.org.br/,descoberta de TVs universitarias
+Rede Legislativa,Camara dos Deputados,alta,https://www.camara.leg.br/tv/,descoberta legislativa
+SS IPTV,documentacao,alta,https://www.ss-iptv.com/en/users/documents/m3u,formato da playlist
+,oficial,,https://www.gov.br/mcom/pt-br/acesso-a-informacao/dados-abertos,
