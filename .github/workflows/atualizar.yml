@@ -1,0 +1,44 @@
+name: Atualizar Brasil TV M3U
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "7 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Importar e cruzar SCR do MCom
+        run: python scripts/importar_scr.py
+
+      - name: Atualizar TVs universitárias
+        run: python scripts/coletar_mapatvu.py
+
+      - name: Cruzar com IPTV-org
+        run: python scripts/descobrir_iptv_org.py
+
+      - name: Validar cadastro
+        run: python scripts/validar.py
+
+      - name: Gerar M3U
+        run: python scripts/gerar_m3u.py
+
+      - name: Commit alterações
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data output
+          git diff --cached --quiet || git commit -m "Atualizar catálogo SCR e playlists"
+          git push
