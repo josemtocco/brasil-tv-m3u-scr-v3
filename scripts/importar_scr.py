@@ -68,8 +68,64 @@ def pick(row, *names):
     return ""
 
 def service(row):
-    return norm(pick(row, "SERVICO", "SERVIÇO", "TIPO SERVICO", "TIPO DE SERVICO",
-                      "SERVIÇO DE RADIODIFUSÃO", "SERVICO DE RADIODIFUSAO"))
+    """
+    O SCR já mudou a nomenclatura de algumas colunas ao longo do tempo.
+    Primeiro procura campos explicitamente ligados ao serviço; depois tenta
+    valores que sejam exatamente siglas conhecidas. Nunca considera uma
+    ocorrência de 'TV' dentro do nome da entidade como serviço.
+    """
+    preferred = (
+        "SERVICO", "SERVIÇO", "TIPO SERVICO", "TIPO DE SERVICO",
+        "TIPO DE SERVIÇO", "SERVICO DE RADIODIFUSAO",
+        "SERVIÇO DE RADIODIFUSÃO", "SIGLA SERVICO", "SIGLA SERVIÇO",
+        "CODIGO SERVICO", "CÓDIGO SERVIÇO", "MODALIDADE",
+        "TIPO SERVIÇO", "SERVICO_RADIO", "SERVICO_RADIODIFUSAO"
+    )
+    vals = []
+    for name in preferred:
+        v = pick(row, name)
+        if v:
+            vals.append(norm(v))
+    # Campos cujo nome contém serviço/modalidade/tipo, inclusive versões novas.
+    for k, v in row.items():
+        nk = norm(k)
+        if any(token in nk for token in ("SERVICO", "SERVIÇO", "MODALIDADE")):
+            if str(v).strip():
+                vals.append(norm(v))
+    aliases = {
+        "TV":"TV", "TELEVISAO":"TV", "TELEVISÃO":"TV",
+        "GTVD":"GTVD", "PBTVD":"PBTVD",
+        "RTV":"RTV", "RTVD":"RTVD",
+        "RETRANSMISSAO DE TV":"RTV",
+        "RETRANSMISSORA DE TV":"RTV",
+        "RETRANSMISSORA":"RTV",
+    }
+    for v in vals:
+        if v in aliases:
+            return aliases[v]
+        # aceita código com texto, ex. "RTV - Retransmissão..."
+        for a in ("GTVD","PBTVD","RTVD","RTV","TV"):
+            if re.search(r"(^|[^A-Z0-9])"+re.escape(a)+r"([^A-Z0-9]|$)", v):
+                return a
+
+    # Fallback conservador. O nome do arquivo é especificamente a base
+    # conjunta de radiodifusão; por isso só classificamos como TV quando
+    # há evidência de canal/serviço de televisão.
+    channel_value = norm(pick(row, "CANAL", "CANAL FISICO", "CANAL FÍSICO",
+                               "CANAL DIGITAL", "CANAL TV", "CANAL DE TV"))
+    tipo = norm(pick(row, "TIPO", "TIPO DE SERVICO", "TIPO DE SERVIÇO"))
+    conjunto = " ".join([channel_value, tipo])
+    if any(x in conjunto for x in ("PBTVD","GTVD","RTVD","RETRANSMISS", "TV DIGITAL")):
+        for a in ("PBTVD","GTVD","RTVD","RTV"):
+            if a in conjunto:
+                return a
+        return "RTV"
+    # Canais físicos de televisão normalmente são inteiros de 2 a 69.
+    if re.fullmatch(r"\d{1,2}", channel_value or ""):
+        n = int(channel_value)
+        if 2 <= n <= 69:
+            return "TV"
+    return ""
 
 def uf(row):
     x = norm(pick(row, "UF", "SIGLA UF", "ESTADO", "UNIDADE DA FEDERACAO"))
@@ -130,12 +186,26 @@ def main():
 
     if not raw:
         raise RuntimeError("SCR sem registros")
-    services = {service(r) for r in raw}
+    services = {service(r) for r in raw if service(r)}
     useful = [r for r in raw if service(r) in TARGET_SERVICES]
-    if len(useful) < 100:
+
+    # Diagnóstico explícito para facilitar manutenção quando o MCom alterar
+    # novamente o layout.
+    if len(useful) == 0:
+        headers = list(raw[0].keys())[:40]
+        sample = []
+        for r in raw[:5]:
+            sample.append({k: r.get(k, "") for k in headers[:12]})
         raise RuntimeError(
-            f"SCR filtrado inesperadamente pequeno ({len(useful)} registros). "
-            "Catálogo não será substituído."
+            "Nenhum registro de TV foi identificado no SCR. "
+            f"Colunas detectadas: {headers}. "
+            f"Serviços identificados: {sorted(services)}. "
+            f"Amostra: {sample}"
+        )
+    if len(useful) < 50:
+        print(
+            f"AVISO: somente {len(useful)} registros de TV foram identificados; "
+            "a importação continuará, mas o relatório registrará o resultado."
         )
 
     cat_path = DATA / "emissoras.csv"
@@ -221,6 +291,7 @@ def main():
         __import__("json").dumps({
             "fonte": URL,
             "servicos_encontrados": sorted(services),
+            "cabecalhos_detectados": list(raw[0].keys()),
             "registros_scr_total": len(raw),
             "registros_tv_filtrados": len(useful),
             "emissoras_novas": added,
