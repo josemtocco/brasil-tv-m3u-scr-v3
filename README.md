@@ -90,3 +90,9 @@ indisponibilidade temporária do MCom não apaga dados já coletados.
 
 Fonte oficial do SCR:
 https://s3.mcom.gov.br/radcom/SCR_DADOS_RADIODIFUSAO_TV_GTVD_RTV_RTVD_FM_OM.csv
+
+### SCR v4 — parser adaptativo
+O importador não depende de um único nome de coluna para identificar o serviço.
+Ele reconhece diferentes grafias/códigos do SCR, registra os cabeçalhos detectados
+no relatório e usa uma classificação conservadora de fallback. Isso evita o
+problema em que a coluna mudou e a filtragem retornou 0 registros.
