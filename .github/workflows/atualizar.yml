@@ -21,6 +21,9 @@ jobs:
           python-version: "3.12"
 
       - name: Importar e cruzar SCR do MCom
+        env:
+          SCR_TIMEOUT: "180"
+          SCR_RETRIES: "4"
         run: python scripts/importar_scr.py
 
       - name: Atualizar TVs universitárias
