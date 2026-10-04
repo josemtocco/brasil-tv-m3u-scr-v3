@@ -96,3 +96,7 @@ O importador não depende de um único nome de coluna para identificar o serviç
 Ele reconhece diferentes grafias/códigos do SCR, registra os cabeçalhos detectados
 no relatório e usa uma classificação conservadora de fallback. Isso evita o
 problema em que a coluna mudou e a filtragem retornou 0 registros.
+
+
+### SCR v5 — tolerância a lentidão do MCom
+O download usa timeout de 180 segundos, até 4 tentativas e leitura em blocos. Uma indisponibilidade temporária do MCom preserva o catálogo e não interrompe as demais fontes.
