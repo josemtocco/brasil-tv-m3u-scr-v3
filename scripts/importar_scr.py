@@ -156,12 +156,31 @@ def classify(serv):
     return "radiodifusao"
 
 def download():
-    req = Request(URL, headers={"User-Agent":"Brasil-TV-M3U/3.0"})
-    with urlopen(req, timeout=60) as r:
-        data = r.read()
-    if len(data) < 1000:
-        raise RuntimeError("download do SCR retornou conteúdo pequeno/inválido")
-    return data
+    """Baixa o SCR com tentativas e leitura em blocos."""
+    import time, os
+    timeout=int(os.environ.get("SCR_TIMEOUT","180"))
+    retries=int(os.environ.get("SCR_RETRIES","4"))
+    last=None
+    for attempt in range(1,retries+1):
+        try:
+            req=Request(URL,headers={"User-Agent":"Mozilla/5.0 (compatible; Brasil-TV-M3U/5.0)"})
+            print(f"SCR: tentativa {attempt}/{retries} (timeout={timeout}s)")
+            with urlopen(req,timeout=timeout) as r:
+                chunks=[]; total=0
+                while True:
+                    chunk=r.read(1024*1024)
+                    if not chunk: break
+                    chunks.append(chunk); total += len(chunk)
+                    if total % (10*1024*1024) < 1024*1024:
+                        print(f"SCR: baixados {total/1024/1024:.1f} MB")
+                data=b"".join(chunks)
+            if len(data)<1000: raise RuntimeError("download do SCR retornou conteúdo pequeno/inválido")
+            print(f"SCR: download concluído ({len(data)/1024/1024:.1f} MB)")
+            return data
+        except Exception as e:
+            last=e; print(f"SCR: tentativa {attempt} falhou: {e}")
+            if attempt<retries: time.sleep(min(30*attempt,90))
+    raise RuntimeError(f"falha após {retries} tentativas: {last}")
 
 def decode(data):
     for enc in ("utf-8-sig","utf-8","latin-1"):
@@ -180,9 +199,9 @@ def main():
         data = download()
         raw = decode(data)
     except Exception as e:
-        print(f"ERRO SCR: {e}", file=sys.stderr)
-        print("Catálogo atual preservado; nenhuma alteração feita pelo SCR.", file=sys.stderr)
-        sys.exit(2)
+        print(f"AVISO SCR: {e}", file=sys.stderr)
+        print("Catálogo atual preservado; seguindo a atualização sem o SCR.", file=sys.stderr)
+        return
 
     if not raw:
         raise RuntimeError("SCR sem registros")
