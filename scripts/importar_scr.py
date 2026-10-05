@@ -167,8 +167,8 @@ def download_fixture_if_requested():
 def download():
     """Baixa o SCR com tentativas e leitura em blocos."""
     import time, os
-    timeout=int(os.environ.get("SCR_TIMEOUT","180"))
-    retries=int(os.environ.get("SCR_RETRIES","4"))
+    timeout=int(os.environ.get("SCR_TIMEOUT","90"))
+    retries=int(os.environ.get("SCR_RETRIES","2"))
     last=None
     for attempt in range(1,retries+1):
         try:
@@ -188,7 +188,7 @@ def download():
             return data
         except Exception as e:
             last=e; print(f"SCR: tentativa {attempt} falhou: {e}")
-            if attempt<retries: time.sleep(min(30*attempt,90))
+            if attempt<retries: time.sleep(min(10*attempt,20))
     raise RuntimeError(f"falha após {retries} tentativas: {last}")
 
 def decode(data):
