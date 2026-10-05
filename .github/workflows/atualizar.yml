@@ -25,6 +25,7 @@ jobs:
           python tests/test_sintaxe.py
           python tests/test_importador.py
           python tests/test_mapatvu_catalogo.py
+          python tests/test_streams_m3u.py
 
       - name: Importar e cruzar SCR do MCom
         env:
