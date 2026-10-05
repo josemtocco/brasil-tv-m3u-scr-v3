@@ -1,1 +1,3 @@
 emissora_id,url,origem,status,observacao
+publica-tv-brasil-df-brasilia,https://tvbrasil-stream.ebc.com.br/index.m3u8,official_external_cdn,active,"Endpoint público da EBC; será revalidado a cada execução."
+legislativa-federal-tv-camara-df-brasilia,https://stream3.camara.gov.br/tv1/manifest.m3u8,official_external_cdn,active,"Endpoint público da Câmara; será revalidado a cada execução."
