@@ -1,0 +1,20 @@
+{
+  "fonte": "https://s3.mcom.gov.br/radcom/SCR_DADOS_RADIODIFUSAO_TV_GTVD_RTV_RTVD_FM_OM.csv",
+  "servicos_encontrados": [
+    "GTVD",
+    "RTVD"
+  ],
+  "cabecalhos_detectados": [
+    "SiglaServico",
+    "Entidade",
+    "UF",
+    "Municipio",
+    "Canal",
+    "Situacao"
+  ],
+  "registros_scr_total": 3,
+  "registros_tv_filtrados": 2,
+  "emissoras_novas": 1,
+  "emissoras_enriquecidas": 0,
+  "data_utc": "2026-10-05"
+}
