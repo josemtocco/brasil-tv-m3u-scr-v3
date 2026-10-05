@@ -20,10 +20,16 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Testar projeto
+        run: |
+          python tests/test_sintaxe.py
+          python tests/test_importador.py
+
       - name: Importar e cruzar SCR do MCom
         env:
           SCR_TIMEOUT: "180"
           SCR_RETRIES: "4"
+        continue-on-error: true
         run: python scripts/importar_scr.py
 
       - name: Atualizar TVs universitárias
