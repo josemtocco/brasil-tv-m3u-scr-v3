@@ -100,3 +100,15 @@ problema em que a coluna mudou e a filtragem retornou 0 registros.
 
 ### SCR v5 — tolerância a lentidão do MCom
 O download usa timeout de 180 segundos, até 4 tentativas e leitura em blocos. Uma indisponibilidade temporária do MCom preserva o catálogo e não interrompe as demais fontes.
+
+## Geração de streams e M3U (v8)
+
+O SCR/MCom serve para identificar emissoras; ele não fornece, por si só, uma URL HLS/M3U8 pública para cada emissora. Por isso o projeto v8 separa:
+
+1. `data/emissoras.csv` — cadastro nacional;
+2. `output/iptv-org-candidatos.csv` — candidatos encontrados;
+3. `data/streams.csv` — somente streams mantidos/aprovados;
+4. `output/streams-diagnostico.csv` — teste de cada stream;
+5. `output/brasil-tv.m3u` — playlist final SS IPTV.
+
+Streams públicos descobertos no IPTV-org só são promovidos quando há forte correspondência do canal e o domínio do stream apresenta evidência institucional (domínio oficial ou CDN/subdomínio institucional). URLs com Xtream, usuário, senha ou token são recusadas. Streams existentes são revalidados a cada execução; os inativos deixam de entrar no M3U, sem apagar o cadastro da emissora.
