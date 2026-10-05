@@ -39,8 +39,9 @@ for n, s in enumerate(streams, 2):
     if not re.match(r"^https?://", url):
         errors.append(f"streams.csv:{n}: URL inválida: {url}")
     if url in seen_urls:
-        errors.append(f"streams.csv:{n}: URL duplicada")
-    seen_urls.add(url)
+        errors.append(f"streams.csv:{n}: URL duplicada: {url}")
+    else:
+        seen_urls.add(url)
     low = url.lower()
     forbidden = ("xtream", "get.php", "player_api", "username=", "password=", "token=")
     if any(x in low for x in forbidden):

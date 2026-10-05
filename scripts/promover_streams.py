@@ -99,8 +99,16 @@ def main():
                 r["status"] = "validated"
                 final.append(r)
 
-    # De-duplicate by emissora + URL.
-    final_map = {(r["emissora_id"], r["url"]): r for r in final}
+    # De-duplicate globally by URL. A single HLS endpoint must not appear
+    # more than once in streams.csv, even if discovery associated it with
+    # multiple records. Keep the first deterministic association.
+    final.sort(key=lambda r: (clean(r.get("url")).lower(), clean(r.get("emissora_id"))))
+    final_map = {}
+    for r in final:
+        u = clean(r.get("url"))
+        if not u or u in final_map:
+            continue
+        final_map[u] = r
     with open(STREAMS, "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=["emissora_id","url","origem","status","observacao"])
         w.writeheader(); w.writerows(final_map.values())
