@@ -84,5 +84,16 @@ for r in rows:
         for k2 in fields:
             if not old.get(k2) and r.get(k2): old[k2]=r[k2]
 with open(CSV,'w',encoding='utf-8',newline='') as f:
-    w=csv.DictWriter(f,fieldnames=fields); w.writeheader(); w.writerows(sorted(by_name.values(),key=lambda r:(r['Estado'],r['Cidade'],r['Emissora'])))
+    all_fields = list(fields)
+    for rec in by_name.values():
+        for k in rec.keys():
+            if k not in all_fields:
+                all_fields.append(k)
+    for rec in by_name.values():
+        for k in all_fields:
+            rec.setdefault(k, '')
+    ordered = sorted(by_name.values(), key=lambda r:(str(r.get('Estado','')),str(r.get('Cidade','')),str(r.get('Emissora',''))))
+    w=csv.DictWriter(f,fieldnames=all_fields,extrasaction='ignore')
+    w.writeheader()
+    w.writerows(ordered)
 print(f'Mapa TVU: {len(rows)} páginas coletadas; catálogo final: {len(by_name)} emissoras')
