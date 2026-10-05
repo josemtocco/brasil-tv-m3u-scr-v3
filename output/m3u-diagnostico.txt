@@ -3,4 +3,4 @@ Streams no CSV: 2
 Streams aprovados para M3U: 2
 Entradas geradas: 2
 Streams sem emissora correspondente: 0
-Arquivo principal: /tmp/v8/v8/output/brasil-tv.m3u
+Arquivo principal: /mnt/data/brasil-tv-m3u-scr-v10/brasil-tv-m3u-scr-v10/output/brasil-tv.m3u
