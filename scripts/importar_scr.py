@@ -20,7 +20,7 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
-URL = "https://s3.mcom.gov.br/radcom/SCR_DADOS_RADIODIFUSAO_TV_GTVD_RTV_RTVD_FM_OM.csv"
+URL = __import__("os").environ.get("SCR_URL", "https://s3.mcom.gov.br/radcom/SCR_DADOS_RADIODIFUSAO_TV_GTVD_RTV_RTVD_FM_OM.csv")
 TARGET_SERVICES = {"TV", "GTVD", "PBTVD", "RTV", "RTVD"}
 
 FIELDS = [
@@ -155,6 +155,15 @@ def classify(serv):
     if serv == "RTVD": return "retransmissora_digital"
     return "radiodifusao"
 
+def download_fixture_if_requested():
+    fixture = __import__("os").environ.get("SCR_FIXTURE")
+    if fixture:
+        path = Path(fixture)
+        data = path.read_bytes()
+        print(f"SCR: fixture de teste ({len(data)} bytes)")
+        return data
+    return None
+
 def download():
     """Baixa o SCR com tentativas e leitura em blocos."""
     import time, os
@@ -196,7 +205,9 @@ def decode(data):
 
 def main():
     try:
-        data = download()
+        data = download_fixture_if_requested()
+        if data is None:
+            data = download()
         raw = decode(data)
     except Exception as e:
         print(f"AVISO SCR: {e}", file=sys.stderr)
