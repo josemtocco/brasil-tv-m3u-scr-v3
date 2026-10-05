@@ -1,0 +1,15 @@
+emissora_id,emissora,estado,cidade,score,host,url,resultado,detalhe
+scr-maraa-am-1302801,Maraã,Amazonas,1302801,88,stream3.camara.gov.br,https://stream3.camara.gov.br/tv1/manifest.m3u8,APROVADO,HTTP 200; application/vnd.apple.mpegurl
+scr-maraa-am-1302801,Maraã,Amazonas,1302801,88,stream3.camara.gov.br,https://stream3.camara.gov.br/tv2/manifest.m3u8,REJEITADO,HTTPError: HTTP Error 404: Not Found
+scr-caem-ba-2905107,Caém,Bahia,2905107,88,stream3.camara.gov.br,https://stream3.camara.gov.br/tv1/manifest.m3u8,APROVADO,HTTP 200; application/vnd.apple.mpegurl
+scr-caem-ba-2905107,Caém,Bahia,2905107,88,stream3.camara.gov.br,https://stream3.camara.gov.br/tv2/manifest.m3u8,REJEITADO,HTTPError: HTTP Error 404: Not Found
+scr-marau-ba-2920700,Maraú,Bahia,2920700,88,stream3.camara.gov.br,https://stream3.camara.gov.br/tv1/manifest.m3u8,APROVADO,HTTP 200; application/vnd.apple.mpegurl
+scr-marau-ba-2920700,Maraú,Bahia,2920700,88,stream3.camara.gov.br,https://stream3.camara.gov.br/tv2/manifest.m3u8,REJEITADO,HTTPError: HTTP Error 404: Not Found
+scr-canaa-mg-3111705,Canaã,Minas Gerais,3111705,88,canallibras-stream.ebc.com.br,https://canallibras-stream.ebc.com.br/mux_video_ts/index-1.m3u8,REJEITADO,HTTPError: HTTP Error 400: Bad Request
+scr-maraba-pa-1504208,Marabá,Pará,1504208,88,stream3.camara.gov.br,https://stream3.camara.gov.br/tv1/manifest.m3u8,APROVADO,HTTP 200; application/vnd.apple.mpegurl
+legislativa-federal-tv-camara-df-brasilia,TV Câmara,DF,Brasília,existente,stream3.camara.gov.br,https://stream3.camara.gov.br/tv1/manifest.m3u8,ATIVO,HTTP 200; application/vnd.apple.mpegurl
+publica-tv-brasil-df-brasilia,TV Brasil,DF,Brasília,existente,tvbrasil-stream.ebc.com.br,https://tvbrasil-stream.ebc.com.br/index.m3u8,ATIVO,HTTP 200; application/x-mpegurl
+scr-caem-ba-2905107,Caém,Bahia,2905107,existente,stream3.camara.gov.br,https://stream3.camara.gov.br/tv1/manifest.m3u8,ATIVO,HTTP 200; application/vnd.apple.mpegurl
+scr-maraa-am-1302801,Maraã,Amazonas,1302801,existente,stream3.camara.gov.br,https://stream3.camara.gov.br/tv1/manifest.m3u8,ATIVO,HTTP 200; application/vnd.apple.mpegurl
+scr-maraba-pa-1504208,Marabá,Pará,1504208,existente,stream3.camara.gov.br,https://stream3.camara.gov.br/tv1/manifest.m3u8,ATIVO,HTTP 200; application/vnd.apple.mpegurl
+scr-marau-ba-2920700,Maraú,Bahia,2920700,existente,stream3.camara.gov.br,https://stream3.camara.gov.br/tv1/manifest.m3u8,ATIVO,HTTP 200; application/vnd.apple.mpegurl

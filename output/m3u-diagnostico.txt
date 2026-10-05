@@ -1,6 +1,6 @@
-Emissoras no catálogo: 319
+Emissoras no catálogo: 4515
 Streams no CSV: 2
 Streams aprovados para M3U: 2
 Entradas geradas: 2
 Streams sem emissora correspondente: 0
-Arquivo principal: /mnt/data/brasil-tv-m3u-scr-v10/brasil-tv-m3u-scr-v10/output/brasil-tv.m3u
+Arquivo principal: /home/runner/work/brasil-tv-m3u-scr-v3/brasil-tv-m3u-scr-v3/output/brasil-tv.m3u
