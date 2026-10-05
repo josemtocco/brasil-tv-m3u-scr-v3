@@ -10,13 +10,13 @@ permissions:
 
 jobs:
   atualizar:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -24,6 +24,7 @@ jobs:
         run: |
           python tests/test_sintaxe.py
           python tests/test_importador.py
+          python tests/test_mapatvu_catalogo.py
 
       - name: Importar e cruzar SCR do MCom
         env:
@@ -35,8 +36,13 @@ jobs:
       - name: Atualizar TVs universitárias
         run: python scripts/coletar_mapatvu.py
 
-      - name: Cruzar com IPTV-org
+      - name: Descobrir candidatos de streams
+        continue-on-error: true
         run: python scripts/descobrir_iptv_org.py
+
+      - name: Promover e validar streams oficiais
+        continue-on-error: true
+        run: python scripts/promover_streams.py
 
       - name: Validar cadastro
         run: python scripts/validar.py
