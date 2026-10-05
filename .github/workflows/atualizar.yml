@@ -29,8 +29,8 @@ jobs:
 
       - name: Importar e cruzar SCR do MCom
         env:
-          SCR_TIMEOUT: "180"
-          SCR_RETRIES: "4"
+          SCR_TIMEOUT: "90"
+          SCR_RETRIES: "2"
         continue-on-error: true
         run: python scripts/importar_scr.py
 
