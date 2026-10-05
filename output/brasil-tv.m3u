@@ -1,1 +1,5 @@
 #EXTM3U
+#EXTINF:-1 tvg-name="TV Brasil" tvg-id="publica-tv-brasil-df-brasilia" group-title="Publica",TV Brasil
+https://tvbrasil-stream.ebc.com.br/index.m3u8
+#EXTINF:-1 tvg-name="TV Câmara" tvg-id="legislativa-federal-tv-camara-df-brasilia" group-title="Legislativa Federal",TV Câmara
+https://stream3.camara.gov.br/tv1/manifest.m3u8
