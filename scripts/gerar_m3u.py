@@ -1,75 +1,43 @@
 #!/usr/bin/env python3
-import csv, re
+import csv
 from pathlib import Path
-from urllib.parse import urlparse
-
-ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "data"
-OUT = ROOT / "output"
+ROOT=Path(__file__).resolve().parents[1]; DATA=ROOT/'data'; OUT=ROOT/'output'
 
 def rows(path):
-    with open(path, encoding="utf-8-sig", newline="") as f:
-        return list(csv.DictReader(f))
-
-def clean(v):
-    return (v or "").strip()
-
-def esc(v):
-    return clean(v).replace('"', "'")
-
-def stream_allowed(s):
-    url = clean(s["url"]).lower()
-    if not url.startswith(("http://", "https://")):
-        return False
-    forbidden = ("xtream", "get.php", "player_api", "username=", "password=", "token=")
-    if any(x in url for x in forbidden):
-        return False
-    if clean(s["origem"]) not in {"official", "government", "university", "iptv_org", "official_external_cdn"}:
-        return False
-    if clean(s["status"]) not in {"active", "validated"}:
-        return False
-    return True
+    if not path.exists(): return []
+    with open(path,encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
+def clean(v):return (v or '').strip()
+def esc(v):return clean(v).replace('"',"'")
+def allowed(s):
+    u=clean(s.get('url')).lower(); o=clean(s.get('origem')); st=clean(s.get('status'))
+    if not u.startswith(('http://','https://')): return False
+    if any(x in u for x in ('xtream','get.php','player_api','username=','password=','token=')): return False
+    return o in {'official','government','university','official_external_cdn'} and st in {'active','validated'}
 
 def main():
     OUT.mkdir(exist_ok=True)
-    channels = {x["id"]: x for x in rows(DATA / "emissoras.csv") if clean(x.get("id"))}
-    streams = [x for x in rows(DATA / "streams.csv") if stream_allowed(x)]
-
-    entries = []
+    channels={x['id']:x for x in rows(DATA/'emissoras.csv') if clean(x.get('id'))}
+    allstreams=rows(DATA/'streams.csv'); streams=[s for s in allstreams if allowed(s)]
+    entries=[]; rejected=0
     for s in streams:
-        c = channels.get(clean(s["emissora_id"]))
-        if not c:
-            continue
-        name = clean(c["Emissora"])
-        group = clean(c["Tipo"]).replace("_", " ").title()
-        tvgid = clean(c["tvg-id"]) or clean(c["id"])
-        logo = clean(c["Logo"])
-        attrs = [
-            f'tvg-name="{esc(name)}"',
-            f'tvg-id="{esc(tvgid)}"',
-            f'group-title="{esc(group)}"',
-        ]
-        if logo:
-            attrs.append(f'tvg-logo="{esc(logo)}"')
-        # IMPORTANT: name after comma is the channel name, never an EPG label.
+        c=channels.get(clean(s.get('emissora_id')))
+        if not c: rejected+=1; continue
+        name=clean(c.get('Emissora')) or clean(s.get('emissora_id'))
+        typ=clean(c.get('Tipo')) or 'tv'
+        group=typ.replace('_',' ').title()
+        tvgid=clean(c.get('tvg-id')) or clean(c.get('id'))
+        attrs=[f'tvg-name="{esc(name)}"',f'tvg-id="{esc(tvgid)}"',f'group-title="{esc(group)}"']
+        if clean(c.get('Logo')): attrs.append(f'tvg-logo="{esc(c["Logo"])}"')
         entries.append(f'#EXTINF:-1 {" ".join(attrs)},{name}\n{clean(s["url"])}')
-
-    entries.sort(key=lambda x: x.lower())
-    playlist = "#EXTM3U\n" + "\n".join(entries) + ("\n" if entries else "")
-    (OUT / "brasil-tv.m3u").write_text(playlist, encoding="utf-8")
-
-    for suffix, predicate in [
-        ("universitarios", lambda c: c["Tipo"] == "universitaria"),
-        ("legislativos", lambda c: "legisl" in c["Tipo"]),
-        ("publicos", lambda c: c["Tipo"] in {"publica", "institucional", "governamental"}),
-    ]:
-        ids = {c["id"] for c in channels.values() if predicate(c)}
-        body = [e for e in entries if any(f'tvg-id="{i}"' in e for i in ids)]
-        (OUT / f"brasil-tv-{suffix}.m3u").write_text(
-            "#EXTM3U\n" + "\n".join(body) + ("\n" if body else ""), encoding="utf-8"
-        )
-    print(f"Emissoras no catálogo: {len(channels)}")
-    print(f"Streams aprovados: {len(entries)}")
-
-if __name__ == "__main__":
-    main()
+    entries.sort(key=str.lower)
+    body='#EXTM3U\n'+('\n'.join(entries)+'\n' if entries else '')
+    (OUT/'brasil-tv.m3u').write_text(body,encoding='utf-8')
+    predicates=[('universitarios',lambda c:c.get('Tipo')=='universitaria'),('legislativos',lambda c:'legisl' in c.get('Tipo','')),('publicos',lambda c:c.get('Tipo') in {'publica','institucional','governamental'})]
+    for suf,pred in predicates:
+        ids={c['id'] for c in channels.values() if pred(c)}
+        es=[e for e in entries if any(f'tvg-id="{i}"' in e for i in ids)]
+        (OUT/f'brasil-tv-{suf}.m3u').write_text('#EXTM3U\n'+('\n'.join(es)+'\n' if es else ''),encoding='utf-8')
+    diag=OUT/'m3u-diagnostico.txt'
+    diag.write_text(f'Emissoras no catálogo: {len(channels)}\nStreams no CSV: {len(allstreams)}\nStreams aprovados para M3U: {len(streams)}\nEntradas geradas: {len(entries)}\nStreams sem emissora correspondente: {rejected}\nArquivo principal: {OUT/"brasil-tv.m3u"}\n',encoding='utf-8')
+    print(diag.read_text())
+if __name__=='__main__':main()
