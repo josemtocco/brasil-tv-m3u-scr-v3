@@ -14,6 +14,7 @@ scr-apora-ba-2901908,Aporá,Bahia,2901908,retransmissora,88,FIFA+ Portuguese (72
 scr-caem-ba-2905107,Caém,Bahia,2905107,retransmissora,88,TV Camara (Brazil) (1080p),TVCamara.br@SD,stream3.camara.gov.br,https://stream3.camara.gov.br/tv1/manifest.m3u8
 scr-caem-ba-2905107,Caém,Bahia,2905107,retransmissora,88,TV Camara 2 (1080p) [Not 24/7],TVCamara2.br@SD,stream3.camara.gov.br,https://stream3.camara.gov.br/tv2/manifest.m3u8
 scr-caem-ba-2905107,Caém,Bahia,2905107,retransmissora,88,TV Camara Salvador (288p) [Not 24/7],TVCamaraSalvador.br@SD,596639ebdd89b.streamlock.net,https://596639ebdd89b.streamlock.net/8114/8114/playlist.m3u8
+scr-central-ba-2907608,Central,Bahia,2907608,retransmissora,88,Comedy Central Brasil (480p),ComedyCentralBrasil.br@SD,stmv2.srvif.com,https://stmv2.srvif.com/gafeab/gafeab/playlist.m3u8
 scr-central-ba-2907608,Central,Bahia,2907608,retransmissora,88,Comedy Central Pluto TV BR,ComedyCentralPlutoTV.us@BR,jmp2.uk,https://jmp2.uk/plu-5f357e91b18f0b00073583d2.m3u8
 scr-central-ba-2907608,Central,Bahia,2907608,retransmissora,88,Comedy Central South Park,ComedyCentralSouthPark.us@BR,jmp2.uk,https://jmp2.uk/plu-609ae66b359b270007869ff1.m3u8
 scr-iacu-ba-2911907,Iaçu,Bahia,2911907,retransmissora,88,Pluto TV Cine Comedia (United States) BR,PlutoTVCineComedia.us@BR,jmp2.uk,https://jmp2.uk/plu-5f12101f0b12f00007844c7c.m3u8
@@ -53,10 +54,11 @@ publica-tv-brasil-df-brasilia,TV Brasil,DF,Brasília,publica,88,TV Brasil Oeste 
 publica-tv-brasil-df-brasilia,TV Brasil,DF,Brasília,publica,88,TV GRANDE NATAL HDTV BRASIL (1080p),TVGRANDENATALHDTVBRASIL.br@SD,tvgrandenatalhd.duckdns.org:8080,http://tvgrandenatalhd.duckdns.org:8080/hls/live.m3u8
 publica-tv-brasil-df-brasilia,TV Brasil,DF,Brasília,publica,82,AgroBrasil TV (720p) [Not 24/7],AgroBrasilTV.br@SD,45.162.230.234:1935,http://45.162.230.234:1935/agrobrasiltv/agrobrasiltv/playlist.m3u8
 publica-tv-brasil-df-brasilia,TV Brasil,DF,Brasília,publica,82,COM Brasil (720p),COMBrasil.br@SD,dfr80qz435crc.cloudfront.net,https://dfr80qz435crc.cloudfront.net/EFGH/Amagi/NewCo/New_Brasil_BR/New_Brasil.m3u8
+publica-tv-brasil-df-brasilia,TV Brasil,DF,Brasília,publica,82,Comedy Central Brasil (480p),ComedyCentralBrasil.br@SD,stmv2.srvif.com,https://stmv2.srvif.com/gafeab/gafeab/playlist.m3u8
 publica-tv-brasil-df-brasilia,TV Brasil,DF,Brasília,publica,82,MBC Brasil TV,MBCBrasilTV.br@SD,play.mbcbrasil.tv.br,https://play.mbcbrasil.tv.br/playlist.m3u8
-publica-tv-brasil-df-brasilia,TV Brasil,DF,Brasília,publica,82,Rede Brasil (1080p),RedeBrasil.br@SD,redebrasil.nuvemplay.live,https://redebrasil.nuvemplay.live/hls/stream.m3u8
 legislativa-federal-tv-senado-df-brasilia,TV Senado,DF,Brasília,legislativa_federal,88,TV Senado (Brazil) (720p),TVSenado.br@SD,45.162.64.114,http://45.162.64.114/TV_SENADO/index.m3u8
 scr-alegre-es-3200201,Alegre,Espírito Santo,3200201,digital_geradora,88,UniTV Porto Alegre (480p),UniTVPortoAlegre.br@SD,unitvaovivo.ufrgs.br:8080,http://unitvaovivo.ufrgs.br:8080/live.ogg
+scr-guarapari-es-3202405,Guarapari,Espírito Santo,3202405,comercial_publica_educativa,88,"like Gecko) Chrome/154.0.0.0 Safari/537.36"" group-title=""General"",TV Guarapari (720p)",TVGuarapari.br@SD,video.welltecnologia.com.br,https://video.welltecnologia.com.br/tvguarapari/tvguarapari/playlist.m3u8
 scr-iuna-es-3203007,Iúna,Espírito Santo,3203007,retransmissora,88,A&E Latin America Brazil (720p),AELatinAmerica.us@Brazil,170.83.16.50,http://170.83.16.50/AeE/index.m3u8
 scr-iuna-es-3203007,Iúna,Espírito Santo,3203007,retransmissora,88,AMC Latin America Brazil (720p),AMCLatinAmerica.us@Brazil,170.83.49.66:8083,http://170.83.49.66:8083/AMCHD/index.m3u8
 scr-iuna-es-3203007,Iúna,Espírito Santo,3203007,retransmissora,88,Adrenalina Pura TV Brazil,AdrenalinaPuraTV.us@Brazil,jmp2.uk,https://jmp2.uk/plu-61b790b985706b00072cb797.m3u8
@@ -106,10 +108,12 @@ universitaria-tv-lepete-nao-confirmado-nao-confirmado,TV LEPETE,Não confirmado,
 universitaria-tv-unisul-nao-confirmado-nao-confirmado,TV UNISUL,Não confirmado,Não confirmado,universitaria,82,Unisul TV (720p),UnisulTV.br@SD,sitetv.brasilstream.com.br,https://sitetv.brasilstream.com.br/hls/sitetv/index.m3u8?token=
 universitaria-tv-up-nao-confirmado-nao-confirmado,TV UP,Não confirmado,Não confirmado,universitaria,82,"like Gecko) Chrome/129.0.0.0 Safari/537.36"" group-title=""Undefined"",TV Bahia (1080i)",TVBahia.br@HD,hls1.sua.tv,http://hls1.sua.tv/live/globotvbahiafhdbr2/s.m3u8
 universitaria-tv-up-nao-confirmado-nao-confirmado,TV UP,Não confirmado,Não confirmado,universitaria,82,"like Gecko) Chrome/149.0.0.0 Safari/537.36"" group-title=""Kids"",Nickelodeon (Brazil) (480p)",Nickelodeon.br@SD,stmv2.srvif.com,https://stmv2.srvif.com/nicktoons/nicktoons/playlist.m3u8
+universitaria-tv-up-nao-confirmado-nao-confirmado,TV UP,Não confirmado,Não confirmado,universitaria,82,"like Gecko) Chrome/154.0.0.0 Safari/537.36"" group-title=""General"",TV Guarapari (720p)",TVGuarapari.br@SD,video.welltecnologia.com.br,https://video.welltecnologia.com.br/tvguarapari/tvguarapari/playlist.m3u8
 universitaria-una-tv-nao-confirmado-nao-confirmado,UNA TV,Não confirmado,Não confirmado,universitaria,88,Araruna TV,ArarunaTV.br@SD,video05.logicahost.com.br,https://video05.logicahost.com.br/ararunatv/ararunatv/playlist.m3u8
 scr-araruna-pr-4101705,Araruna,Paraná,4101705,retransmissora,88,Araruna TV,ArarunaTV.br@SD,video05.logicahost.com.br,https://video05.logicahost.com.br/ararunatv/ararunatv/playlist.m3u8
 scr-curitiba-pr-4106902,Curitiba,Paraná,4106902,comercial_publica_educativa,88,TV 3 Curitiba,TV3Curitiba.br@SD,stmv.webtvninjas.com.br,https://stmv.webtvninjas.com.br/tv3/tv3/playlist.m3u8
 scr-guaira-pr-4108809,Guaíra,Paraná,4108809,retransmissora,88,TV Guara (720p) [Not 24/7],TVGuara.br@SD,video02.logicahost.com.br,https://video02.logicahost.com.br/tvguara23/tvguara23/playlist.m3u8
+scr-guaira-pr-4108809,Guaíra,Paraná,4108809,retransmissora,88,"like Gecko) Chrome/154.0.0.0 Safari/537.36"" group-title=""General"",TV Guarapari (720p)",TVGuarapari.br@SD,video.welltecnologia.com.br,https://video.welltecnologia.com.br/tvguarapari/tvguarapari/playlist.m3u8
 scr-ivai-pr-4111407,Ivaí,Paraná,4111407,retransmissora,88,TV Alternativa (410p),TVAlternativa.br@SD,stmv5.samcast.com.br,https://stmv5.samcast.com.br/wagner7919/wagner7919/playlist.m3u8
 scr-ivai-pr-4111407,Ivaí,Paraná,4111407,retransmissora,88,Terra Viva (720p),TerraViva.br@SD,45.162.64.114,http://45.162.64.114/TERRAVIVA/index.m3u8
 scr-vere-pr-4128609,Verê,Paraná,4128609,retransmissora,88,Cinturao Verde,CinturaoVerde.br@SD,play.redecinturaoverde.com.br,https://play.redecinturaoverde.com.br/playlist.m3u8
@@ -194,6 +198,7 @@ scr-avai-sp-3504305,Avaí,São Paulo,3504305,retransmissora,88,Avatar: A lenda d
 scr-birigui-sp-3506508,Birigui,São Paulo,3506508,digital_geradora,88,TV Birigui (640p),TVBirigui.br@SD,59f2354c05961.streamlock.net:1443,https://59f2354c05961.streamlock.net:1443/tvdigitalbirigui/_definst_/tvdigitalbirigui/playlist.m3u8
 scr-birigui-sp-3506508,Birigui,São Paulo,3506508,digital_geradora,88,TV Digital Birigui (640p),TVDigitalBirigui.br@SD,wse01.logicahost.com.br:1935,http://wse01.logicahost.com.br:1935/tvdigitalbirigui/_definst_/tvdigitalbirigui/playlist.m3u8
 scr-guaira-sp-3517406,Guaíra,São Paulo,3517406,retransmissora,88,TV Guara (720p) [Not 24/7],TVGuara.br@SD,video02.logicahost.com.br,https://video02.logicahost.com.br/tvguara23/tvguara23/playlist.m3u8
+scr-guaira-sp-3517406,Guaíra,São Paulo,3517406,retransmissora,88,"like Gecko) Chrome/154.0.0.0 Safari/537.36"" group-title=""General"",TV Guarapari (720p)",TVGuarapari.br@SD,video.welltecnologia.com.br,https://video.welltecnologia.com.br/tvguarapari/tvguarapari/playlist.m3u8
 scr-itai-sp-3521804,Itaí,São Paulo,3521804,retransmissora,88,Canal Metropolitano de Noticias,CanalMetropolitanodeNoticias.br@SD,stmv5.samcast.com.br,https://stmv5.samcast.com.br/claudio8701/claudio8701/playlist.m3u8
 scr-itai-sp-3521804,Itaí,São Paulo,3521804,retransmissora,88,Pluto TV Minha Obsessao Favorita,PlutoTVMinhaObsessaoFavorita.us@BR,jmp2.uk,https://jmp2.uk/plu-61843f5e491af10007f7eefa.m3u8
 scr-itai-sp-3521804,Itaí,São Paulo,3521804,retransmissora,88,RecordTV Itapoan (720p) [Geo-blocked],RecordTVItapoan.br@SD,playplussdr-lh.akamaihd.net,https://playplussdr-lh.akamaihd.net/i/pp_sdr@377858/index_720_av-b.m3u8
@@ -212,5 +217,6 @@ scr-quadra-sp-3541653,Quadra,São Paulo,3541653,retransmissora_digital,88,Bob Es
 scr-socorro-sp-3552106,Socorro,São Paulo,3552106,retransmissora,88,Pronto-socorro: Historias De Emergencia,ProntosocorroHistoriasDeEmergencia.us@Brazil,jmp2.uk,https://jmp2.uk/plu-61bb72a7bf8c520007a8fd27.m3u8
 scr-uru-sp-3555901,Uru,São Paulo,3555901,retransmissora_digital,88,TV Curuca (360p),TVCuruca.br@SD,stmv1.srvif.com,https://stmv1.srvif.com/tvcurucasp/tvcurucasp/playlist.m3u8
 scr-guarai-to-1709302,Guaraí,Tocantins,1709302,digital_geradora,88,TV Guara (720p) [Not 24/7],TVGuara.br@SD,video02.logicahost.com.br,https://video02.logicahost.com.br/tvguara23/tvguara23/playlist.m3u8
+scr-guarai-to-1709302,Guaraí,Tocantins,1709302,digital_geradora,88,"like Gecko) Chrome/154.0.0.0 Safari/537.36"" group-title=""General"",TV Guarapari (720p)",TVGuarapari.br@SD,video.welltecnologia.com.br,https://video.welltecnologia.com.br/tvguarapari/tvguarapari/playlist.m3u8
 scr-parana-to-1716208,Paranã,Tocantins,1716208,retransmissora,88,RedeTV! Parana,RedeTVParana.br@SD,tv01.zas.media:1936,https://tv01.zas.media:1936/redetvparana/redetvparana/playlist.m3u8
 scr-parana-to-1716208,Paranã,Tocantins,1716208,retransmissora,88,TV Parana Turismo (720p) [Not 24/7],TVParanaTurismo.br@SD,200.189.113.201,http://200.189.113.201/hls/tve.m3u8
