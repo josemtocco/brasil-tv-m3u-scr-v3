@@ -53,9 +53,9 @@ publica-tv-brasil-df-brasilia,TV Brasil,DF,Brasília,publica,88,TV Brasil (720p)
 publica-tv-brasil-df-brasilia,TV Brasil,DF,Brasília,publica,88,TV Brasil Oeste (720p),TVBrasilOeste.br@SD,5ad482a77183d.streamlock.net,https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8
 publica-tv-brasil-df-brasilia,TV Brasil,DF,Brasília,publica,88,TV GRANDE NATAL HDTV BRASIL (1080p),TVGRANDENATALHDTVBRASIL.br@SD,tvgrandenatalhd.duckdns.org:8080,http://tvgrandenatalhd.duckdns.org:8080/hls/live.m3u8
 publica-tv-brasil-df-brasilia,TV Brasil,DF,Brasília,publica,82,AgroBrasil TV (720p) [Not 24/7],AgroBrasilTV.br@SD,45.162.230.234:1935,http://45.162.230.234:1935/agrobrasiltv/agrobrasiltv/playlist.m3u8
+publica-tv-brasil-df-brasilia,TV Brasil,DF,Brasília,publica,82,CNN Brasil (1080p),CNNBrasil.br@SD,d25usgadhphvwi.cloudfront.net,https://d25usgadhphvwi.cloudfront.net/hls/main.m3u8
 publica-tv-brasil-df-brasilia,TV Brasil,DF,Brasília,publica,82,COM Brasil (720p),COMBrasil.br@SD,dfr80qz435crc.cloudfront.net,https://dfr80qz435crc.cloudfront.net/EFGH/Amagi/NewCo/New_Brasil_BR/New_Brasil.m3u8
 publica-tv-brasil-df-brasilia,TV Brasil,DF,Brasília,publica,82,Comedy Central Brasil (480p),ComedyCentralBrasil.br@SD,stmv2.srvif.com,https://stmv2.srvif.com/gafeab/gafeab/playlist.m3u8
-publica-tv-brasil-df-brasilia,TV Brasil,DF,Brasília,publica,82,MBC Brasil TV,MBCBrasilTV.br@SD,play.mbcbrasil.tv.br,https://play.mbcbrasil.tv.br/playlist.m3u8
 legislativa-federal-tv-senado-df-brasilia,TV Senado,DF,Brasília,legislativa_federal,88,TV Senado (Brazil) (720p),TVSenado.br@SD,45.162.64.114,http://45.162.64.114/TV_SENADO/index.m3u8
 scr-alegre-es-3200201,Alegre,Espírito Santo,3200201,digital_geradora,88,UniTV Porto Alegre (480p),UniTVPortoAlegre.br@SD,unitvaovivo.ufrgs.br:8080,http://unitvaovivo.ufrgs.br:8080/live.ogg
 scr-guarapari-es-3202405,Guarapari,Espírito Santo,3202405,comercial_publica_educativa,88,"like Gecko) Chrome/154.0.0.0 Safari/537.36"" group-title=""General"",TV Guarapari (720p)",TVGuarapari.br@SD,video.welltecnologia.com.br,https://video.welltecnologia.com.br/tvguarapari/tvguarapari/playlist.m3u8
