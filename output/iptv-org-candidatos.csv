@@ -23,7 +23,7 @@ scr-iacu-ba-2911907,Iaçu,Bahia,2911907,retransmissora,88,TV Assembleia Piaui,TV
 scr-itape-ba-2916203,Itapé,Bahia,2916203,retransmissora,88,RecordTV Itapoan (720p) [Geo-blocked],RecordTVItapoan.br@SD,playplussdr-lh.akamaihd.net,https://playplussdr-lh.akamaihd.net/i/pp_sdr@377858/index_720_av-b.m3u8
 scr-itape-ba-2916203,Itapé,Bahia,2916203,retransmissora,88,TVitape (720p),TVitape.br@SD,stream01.msolutionbrasil.com.br,https://stream01.msolutionbrasil.com.br/hls/tvitape/live.m3u8
 scr-itapetinga-ba-2916401,Itapetinga,Bahia,2916401,digital_geradora,82,TV+Pet,TVPlusPet.br@SD,stmv5.samcast.com.br,https://stmv5.samcast.com.br/tvmaispet6354/tvmaispet6354/playlist.m3u8
-scr-itiuba-ba-2917003,Itiúba,Bahia,2917003,retransmissora,88,TV 3 Curitiba,TV3Curitiba.br@SD,stmv.webtvninjas.com.br,https://stmv.webtvninjas.com.br/tv3/tv3/playlist.m3u8
+scr-itiuba-ba-2917003,Itiúba,Bahia,2917003,retransmissora,88,TV 3 Curitiba (720p),TV3Curitiba.br@SD,stmv.webtvninjas.com.br,https://stmv.webtvninjas.com.br/tv3/tv3/playlist.m3u8
 scr-marau-ba-2920700,Maraú,Bahia,2920700,retransmissora,88,TV Camara (Brazil) (1080p),TVCamara.br@SD,stream3.camara.gov.br,https://stream3.camara.gov.br/tv1/manifest.m3u8
 scr-marau-ba-2920700,Maraú,Bahia,2920700,retransmissora,88,TV Camara 2 (1080p) [Not 24/7],TVCamara2.br@SD,stream3.camara.gov.br,https://stream3.camara.gov.br/tv2/manifest.m3u8
 scr-marau-ba-2920700,Maraú,Bahia,2920700,retransmissora,88,TV Camara Salvador (288p) [Not 24/7],TVCamaraSalvador.br@SD,596639ebdd89b.streamlock.net,https://596639ebdd89b.streamlock.net/8114/8114/playlist.m3u8
@@ -111,7 +111,7 @@ universitaria-tv-up-nao-confirmado-nao-confirmado,TV UP,Não confirmado,Não con
 universitaria-tv-up-nao-confirmado-nao-confirmado,TV UP,Não confirmado,Não confirmado,universitaria,82,"like Gecko) Chrome/154.0.0.0 Safari/537.36"" group-title=""General"",TV Guarapari (720p)",TVGuarapari.br@SD,video.welltecnologia.com.br,https://video.welltecnologia.com.br/tvguarapari/tvguarapari/playlist.m3u8
 universitaria-una-tv-nao-confirmado-nao-confirmado,UNA TV,Não confirmado,Não confirmado,universitaria,88,Araruna TV,ArarunaTV.br@SD,video05.logicahost.com.br,https://video05.logicahost.com.br/ararunatv/ararunatv/playlist.m3u8
 scr-araruna-pr-4101705,Araruna,Paraná,4101705,retransmissora,88,Araruna TV,ArarunaTV.br@SD,video05.logicahost.com.br,https://video05.logicahost.com.br/ararunatv/ararunatv/playlist.m3u8
-scr-curitiba-pr-4106902,Curitiba,Paraná,4106902,comercial_publica_educativa,88,TV 3 Curitiba,TV3Curitiba.br@SD,stmv.webtvninjas.com.br,https://stmv.webtvninjas.com.br/tv3/tv3/playlist.m3u8
+scr-curitiba-pr-4106902,Curitiba,Paraná,4106902,comercial_publica_educativa,88,TV 3 Curitiba (720p),TV3Curitiba.br@SD,stmv.webtvninjas.com.br,https://stmv.webtvninjas.com.br/tv3/tv3/playlist.m3u8
 scr-guaira-pr-4108809,Guaíra,Paraná,4108809,retransmissora,88,TV Guara (720p) [Not 24/7],TVGuara.br@SD,video02.logicahost.com.br,https://video02.logicahost.com.br/tvguara23/tvguara23/playlist.m3u8
 scr-guaira-pr-4108809,Guaíra,Paraná,4108809,retransmissora,88,"like Gecko) Chrome/154.0.0.0 Safari/537.36"" group-title=""General"",TV Guarapari (720p)",TVGuarapari.br@SD,video.welltecnologia.com.br,https://video.welltecnologia.com.br/tvguarapari/tvguarapari/playlist.m3u8
 scr-ivai-pr-4111407,Ivaí,Paraná,4111407,retransmissora,88,TV Alternativa (410p),TVAlternativa.br@SD,stmv5.samcast.com.br,https://stmv5.samcast.com.br/wagner7919/wagner7919/playlist.m3u8
