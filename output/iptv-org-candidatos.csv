@@ -1,6 +1,7 @@
 emissora_id,emissora,estado,cidade,tipo,score,nome_iptv_org,tvg_id,host,url
 universitaria-tv-ifap-ap-macapa,TV IFAP,AP,Macapá,universitaria,82,FIFA+ Portuguese (720p),FIFAPlus.uk@Portuguese,e3be9ac5.wurl.com,https://e3be9ac5.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctYnJfRklGQVBsdXNQb3J0dWd1ZXNlX0hMUw/playlist.m3u8
 scr-brasileia-ac-1200104,Brasiléia,Acre,1200104,retransmissora,88,RecordTV Brasilia (720p) [Geo-blocked],RecordTVBrasilia.br@SD,playplusbsa-lh.akamaihd.net,https://playplusbsa-lh.akamaihd.net/i/pp_bsa@377860/index_720_av-p.m3u8
+scr-brasileia-ac-1200104,Brasiléia,Acre,1200104,retransmissora,88,TV Globo Brasilia (1080p),TVGloboBrasilia.br@SD,79.127.238.228:14173,http://79.127.238.228:14173/
 scr-jundia-al-2703908,Jundiá,Alagoas,2703908,retransmissora,88,Canal 25 Jundiai (720p),Canal25Jundiai.br@SD,cdn-tiva-stream01-msolutionbrasil-com-br.smartbit.co,https://cdn-tiva-stream01-msolutionbrasil-com-br.smartbit.co/hls/canal25/live.m3u8
 scr-maceio-al-2704302,Maceió,Alagoas,2704302,comercial_publica_educativa,88,TVCOM Maceio (480p),TVCOMMaceio.br@SD,srv5.zcast.com.br,https://srv5.zcast.com.br/tvcommaceio/tvcommaceio/playlist.m3u8
 scr-macapa-ap-1600303,Macapá,Amapá,1600303,comercial_publica_educativa,88,TV Diario Macapa (1080p) [Not 24/7],TVDiarioMacapa.br@SD,5ad482a77183d.streamlock.net,https://5ad482a77183d.streamlock.net/marliomelohotmail.com/marliomelohotmail.com/playlist.m3u8
