@@ -183,7 +183,7 @@ scr-canta-rr-1400175,Cantá,Roraima,1400175,digital_geradora,88,O Encantador de 
 universitaria-unisul-tv-sc-tubarao,Unisul TV,SC,Tubarão,universitaria,88,Unisul TV (720p),UnisulTV.br@SD,sitetv.brasilstream.com.br,https://sitetv.brasilstream.com.br/hls/sitetv/index.m3u8?token=
 universitaria-tv-mackenzie-sp-sao-paulo,TV Mackenzie,SP,São Paulo,universitaria,88,TV Mackenzie (480p),TVMackenzie.br@SD,player.internetaovivo.com:8443,https://player.internetaovivo.com:8443/live_tvmackenzieabr/tvmackenzieabr/playlist.m3u8
 scr-brusque-sc-4202909,Brusque,Santa Catarina,4202909,retransmissora,88,TV Brusque (720p),TVBrusque.br@SD,5ad482a77183d.streamlock.net,https://5ad482a77183d.streamlock.net/rodrigotvbrusque.com.br/5d880199c902eb4a1e8df00d/playlist.m3u8
-scr-ita-sc-4208005,Itá,Santa Catarina,4208005,retransmissora,88,1001 Noites (720p) [Not 24/7],1001Noites.br@SD,cdn.jmvstream.com,https://cdn.jmvstream.com/w/LVW-8155/ngrp:LVW8155_41E1ciuCvO_all/playlist.m3u8
+scr-ita-sc-4208005,Itá,Santa Catarina,4208005,retransmissora,88,1001 Noites (480p),1001Noites.br@SD,cpbr.appflux.com.br:2000,https://cpbr.appflux.com.br:2000/hls/1001noites/1001noites.m3u8
 scr-ita-sc-4208005,Itá,Santa Catarina,4208005,retransmissora,88,Blitstv,Blitstv.br@SD,stmv1.transmissaodigital.com,https://stmv1.transmissaodigital.com/blitstv/blitstv/playlist.m3u8
 scr-ita-sc-4208005,Itá,Santa Catarina,4208005,retransmissora,88,Canal Metropolitano de Noticias,CanalMetropolitanodeNoticias.br@SD,stmv5.samcast.com.br,https://stmv5.samcast.com.br/claudio8701/claudio8701/playlist.m3u8
 scr-ita-sc-4208005,Itá,Santa Catarina,4208005,retransmissora,88,Fala Litoral (480p),FalaLitoral.br@SD,5c483b9d1019c.streamlock.net,https://5c483b9d1019c.streamlock.net/falalitoraltv/falalitoraltv/playlist.m3u8
