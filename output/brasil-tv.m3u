@@ -1,3 +1,5 @@
 #EXTM3U
+#EXTINF:-1 tvg-name="Caém" tvg-id="scr-caem-ba-2905107" group-title="Retransmissora",Caém
+https://stream3.camara.gov.br/tv1/manifest.m3u8
 #EXTINF:-1 tvg-name="TV Brasil" tvg-id="publica-tv-brasil-df-brasilia" group-title="Publica",TV Brasil
 https://tvbrasil-stream.ebc.com.br/index.m3u8

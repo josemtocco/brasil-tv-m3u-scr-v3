@@ -1,2 +1,3 @@
 emissora_id,url,origem,status,observacao
+scr-caem-ba-2905107,https://stream3.camara.gov.br/tv1/manifest.m3u8,official_external_cdn,validated,Descoberto via IPTV-org; domínio institucional validado (stream3.camara.gov.br).
 publica-tv-brasil-df-brasilia,https://tvbrasil-stream.ebc.com.br/index.m3u8,official_external_cdn,validated,Endpoint público da EBC; será revalidado a cada execução.
