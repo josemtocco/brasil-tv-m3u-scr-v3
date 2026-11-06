@@ -1,7 +1,7 @@
 emissora_id,emissora,estado,cidade,tipo,score,nome_iptv_org,tvg_id,host,url
 universitaria-tv-ifap-ap-macapa,TV IFAP,AP,Macapá,universitaria,82,FIFA+ Portuguese (720p),FIFAPlus.uk@Portuguese,e3be9ac5.wurl.com,https://e3be9ac5.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctYnJfRklGQVBsdXNQb3J0dWd1ZXNlX0hMUw/playlist.m3u8
 scr-brasileia-ac-1200104,Brasiléia,Acre,1200104,retransmissora,88,RecordTV Brasilia (720p) [Geo-blocked],RecordTVBrasilia.br@SD,playplusbsa-lh.akamaihd.net,https://playplusbsa-lh.akamaihd.net/i/pp_bsa@377860/index_720_av-p.m3u8
-scr-brasileia-ac-1200104,Brasiléia,Acre,1200104,retransmissora,88,TV Globo Brasilia (1080p),TVGloboBrasilia.br@SD,79.127.238.228:14173,http://79.127.238.228:14173/
+scr-brasileia-ac-1200104,Brasiléia,Acre,1200104,retransmissora,88,TV Globo Brasilia (1080p),TVGloboBrasilia.br@SD,79.127.238.228:14173,http://79.127.238.228:14173
 scr-jundia-al-2703908,Jundiá,Alagoas,2703908,retransmissora,88,Canal 25 Jundiai (720p),Canal25Jundiai.br@SD,cdn-tiva-stream01-msolutionbrasil-com-br.smartbit.co,https://cdn-tiva-stream01-msolutionbrasil-com-br.smartbit.co/hls/canal25/live.m3u8
 scr-maceio-al-2704302,Maceió,Alagoas,2704302,comercial_publica_educativa,88,TVCOM Maceio (480p),TVCOMMaceio.br@SD,srv5.zcast.com.br,https://srv5.zcast.com.br/tvcommaceio/tvcommaceio/playlist.m3u8
 scr-macapa-ap-1600303,Macapá,Amapá,1600303,comercial_publica_educativa,88,TV Diario Macapa (1080p) [Not 24/7],TVDiarioMacapa.br@SD,5ad482a77183d.streamlock.net,https://5ad482a77183d.streamlock.net/marliomelohotmail.com/marliomelohotmail.com/playlist.m3u8
@@ -32,9 +32,9 @@ scr-marau-ba-2920700,Maraú,Bahia,2920700,retransmissora,88,TV Marajoara (720p),
 scr-salvador-ba-2927408,Salvador,Bahia,2927408,comercial_publica_educativa,88,Rede CNT Salvador (576i),RedeCNTSalvador.br@SD,168.205.87.198:8555,http://168.205.87.198:8555/live/1368/123456/150.m3u8
 scr-salvador-ba-2927408,Salvador,Bahia,2927408,comercial_publica_educativa,88,TV Camara Salvador (288p) [Not 24/7],TVCamaraSalvador.br@SD,596639ebdd89b.streamlock.net,https://596639ebdd89b.streamlock.net/8114/8114/playlist.m3u8
 scr-una-ba-2932507,Una,Bahia,2932507,retransmissora,88,Araruna TV,ArarunaTV.br@SD,video05.logicahost.com.br,https://video05.logicahost.com.br/ararunatv/ararunatv/playlist.m3u8
-scr-ico-ce-2305407,Icó,Ceará,2305407,retransmissora,88,A&E Latin America Brazil (720p),AELatinAmerica.us@Brazil,170.83.16.50,http://170.83.16.50/AeE/index.m3u8
+scr-ico-ce-2305407,Icó,Ceará,2305407,retransmissora,88,A&E Latin America Brazil (720p),AELatinAmerica.us@Brazil,79.127.238.228:14551,http://79.127.238.228:14551
 scr-ico-ce-2305407,Icó,Ceará,2305407,retransmissora,88,AMC Latin America Brazil (720p),AMCLatinAmerica.us@Brazil,170.83.49.66:8083,http://170.83.49.66:8083/AMCHD/index.m3u8
-scr-ico-ce-2305407,Icó,Ceará,2305407,retransmissora,88,Adult Swim Latin America Brazil (720p),AdultSwimLatinAmerica.us@Brazil,168.197.104.22,http://168.197.104.22/ADULT_SWIM/index.m3u8
+scr-ico-ce-2305407,Icó,Ceará,2305407,retransmissora,88,Adult Swim Latin America Brazil (720p),AdultSwimLatinAmerica.us@Brazil,45.162.64.114,http://45.162.64.114/ADULT_SWIM/index.m3u8
 scr-ico-ce-2305407,Icó,Ceará,2305407,retransmissora,88,Canal Metropolitano de Noticias,CanalMetropolitanodeNoticias.br@SD,stmv5.samcast.com.br,https://stmv5.samcast.com.br/claudio8701/claudio8701/playlist.m3u8
 scr-ico-ce-2305407,Icó,Ceará,2305407,retransmissora,88,Canal Ricos (480p),CanalRicos.br@SD,5d82644094cc0.streamlock.net,https://5d82644094cc0.streamlock.net/ricostv/ricostv/playlist.m3u8
 scr-ico-ce-2305407,Icó,Ceará,2305407,retransmissora,88,Cartoon Network Latin America Brazil (720p),CartoonNetworkLatinAmerica.us@Brazil,45.162.64.114,http://45.162.64.114/CARTOON_NETWORK/index.m3u8
@@ -60,10 +60,10 @@ publica-tv-brasil-df-brasilia,TV Brasil,DF,Brasília,publica,82,Comedy Central B
 legislativa-federal-tv-senado-df-brasilia,TV Senado,DF,Brasília,legislativa_federal,88,TV Senado (Brazil) (720p),TVSenado.br@SD,45.162.64.114,http://45.162.64.114/TV_SENADO/index.m3u8
 scr-alegre-es-3200201,Alegre,Espírito Santo,3200201,digital_geradora,88,UniTV Porto Alegre (480p),UniTVPortoAlegre.br@SD,unitvaovivo.ufrgs.br:8080,http://unitvaovivo.ufrgs.br:8080/live.ogg
 scr-guarapari-es-3202405,Guarapari,Espírito Santo,3202405,comercial_publica_educativa,88,"like Gecko) Chrome/154.0.0.0 Safari/537.36"" group-title=""General"",TV Guarapari (720p)",TVGuarapari.br@SD,video.welltecnologia.com.br,https://video.welltecnologia.com.br/tvguarapari/tvguarapari/playlist.m3u8
-scr-iuna-es-3203007,Iúna,Espírito Santo,3203007,retransmissora,88,A&E Latin America Brazil (720p),AELatinAmerica.us@Brazil,170.83.16.50,http://170.83.16.50/AeE/index.m3u8
+scr-iuna-es-3203007,Iúna,Espírito Santo,3203007,retransmissora,88,A&E Latin America Brazil (720p),AELatinAmerica.us@Brazil,79.127.238.228:14551,http://79.127.238.228:14551
 scr-iuna-es-3203007,Iúna,Espírito Santo,3203007,retransmissora,88,AMC Latin America Brazil (720p),AMCLatinAmerica.us@Brazil,170.83.49.66:8083,http://170.83.49.66:8083/AMCHD/index.m3u8
 scr-iuna-es-3203007,Iúna,Espírito Santo,3203007,retransmissora,88,Adrenalina Pura TV Brazil,AdrenalinaPuraTV.us@Brazil,jmp2.uk,https://jmp2.uk/plu-61b790b985706b00072cb797.m3u8
-scr-iuna-es-3203007,Iúna,Espírito Santo,3203007,retransmissora,88,Adult Swim Latin America Brazil (720p),AdultSwimLatinAmerica.us@Brazil,168.197.104.22,http://168.197.104.22/ADULT_SWIM/index.m3u8
+scr-iuna-es-3203007,Iúna,Espírito Santo,3203007,retransmissora,88,Adult Swim Latin America Brazil (720p),AdultSwimLatinAmerica.us@Brazil,45.162.64.114,http://45.162.64.114/ADULT_SWIM/index.m3u8
 scr-iuna-es-3203007,Iúna,Espírito Santo,3203007,retransmissora,88,Cartoon Network Latin America Brazil (720p),CartoonNetworkLatinAmerica.us@Brazil,45.162.64.114,http://45.162.64.114/CARTOON_NETWORK/index.m3u8
 scr-iuna-es-3203007,Iúna,Espírito Santo,3203007,retransmissora,88,Discovery Channel Latin America Brazil (720p),DiscoveryChannelLatinAmerica.us@Brazil,45.162.64.114,http://45.162.64.114/DISCOVERY_CHANNEL/index.m3u8
 scr-iuna-es-3203007,Iúna,Espírito Santo,3203007,retransmissora,88,Discovery Kids Latin America Brazil (720p) [Geo-blocked],DiscoveryKidsLatinAmerica.us@Brazil,15.204.246.24:8080,http://15.204.246.24:8080/DiscoveryKidsHD/index.m3u8
@@ -79,15 +79,15 @@ scr-parauna-go-5216403,Paraúna,Goiás,5216403,retransmissora,88,RedeTV! Parana,
 scr-parauna-go-5216403,Paraúna,Goiás,5216403,retransmissora,88,TV Parana Turismo (720p) [Not 24/7],TVParanaTurismo.br@SD,200.189.113.201,http://200.189.113.201/hls/tve.m3u8
 scr-petrolina-de-goias-go-5216809,Petrolina de Goiás,Goiás,5216809,retransmissora,82,TV+Pet,TVPlusPet.br@SD,stmv5.samcast.com.br,https://stmv5.samcast.com.br/tvmaispet6354/tvmaispet6354/playlist.m3u8
 universitaria-tv-ufop-mg-ouro-preto,TV UFOP,MG,Ouro Preto,universitaria,88,TV UFOP (1080p),TVUFOP.br@HD,app.tvufop.com.br,https://app.tvufop.com.br/hls/tvufop.m3u8
-scr-cuiaba-mt-5103403,Cuiabá,Mato Grosso,5103403,comercial_publica_educativa,88,SBT Cuiaba,SBTCuiaba.br@SD,video09.logicahost.com.br,https://video09.logicahost.com.br/sbtcuiaba/sbtcuiaba/playlist.m3u8
+scr-cuiaba-mt-5103403,Cuiabá,Mato Grosso,5103403,comercial_publica_educativa,88,SBT Cuiaba (818p),SBTCuiaba.br@SD,video09.logicahost.com.br,https://video09.logicahost.com.br/sbtcuiaba/sbtcuiaba/playlist.m3u8
 scr-cuiaba-mt-5103403,Cuiabá,Mato Grosso,5103403,comercial_publica_educativa,88,TV Cidade Verde Cuiaba,TVCidadeVerdeCuiaba.br@SD,televisaocidadeverde.brasilstream.com.br,https://televisaocidadeverde.brasilstream.com.br/hls/televisaocidadeverde/index.m3u8
-scr-nova-mutum-mt-5106224,Nova Mutum,Mato Grosso,5106224,digital_geradora,88,SBT Nova Mutum,SBTNovaMutum.br@SD,video09.logicahost.com.br,https://video09.logicahost.com.br/sbtmutum/sbtmutum/playlist.m3u8
+scr-nova-mutum-mt-5106224,Nova Mutum,Mato Grosso,5106224,digital_geradora,88,SBT Nova Mutum (818p),SBTNovaMutum.br@SD,video09.logicahost.com.br,https://video09.logicahost.com.br/sbtmutum/sbtmutum/playlist.m3u8
 scr-arapua-mg-3103801,Arapuá,Minas Gerais,3103801,retransmissora,88,TV Arapuan (720p),TVArapuan.br@SD,5b7f3c45ab7c2.streamlock.net,https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8
 scr-canaa-mg-3111705,Canaã,Minas Gerais,3111705,retransmissora,88,AgroCanal (720p),AgroCanal.br@SD,45.162.64.114,http://45.162.64.114/AGRO_CANAL/index.m3u8
 scr-canaa-mg-3111705,Canaã,Minas Gerais,3111705,retransmissora,88,Canal 25 Jundiai (720p),Canal25Jundiai.br@SD,cdn-tiva-stream01-msolutionbrasil-com-br.smartbit.co,https://cdn-tiva-stream01-msolutionbrasil-com-br.smartbit.co/hls/canal25/live.m3u8
 scr-canaa-mg-3111705,Canaã,Minas Gerais,3111705,retransmissora,88,Canal 38 (720p),Canal38.br@SD,cdn.jmvstream.com,https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8
 scr-canaa-mg-3111705,Canaã,Minas Gerais,3111705,retransmissora,88,Canal Educacao (720p),CanalEducacao.br@SD,45.162.64.114,http://45.162.64.114/CANAL_EDUCACAO/index.m3u8
-scr-canaa-mg-3111705,Canaã,Minas Gerais,3111705,retransmissora,88,Canal FDR,CanalFDR.br@SD,v-us-01.wisestream.io,https://v-us-01.wisestream.io/memfs/e4ade538-7924-4359-81ef-b9d4dd229e91.m3u8
+scr-canaa-mg-3111705,Canaã,Minas Gerais,3111705,retransmissora,88,Canal FDR (1080p),CanalFDR.br@SD,v-us-01.wisestream.io,https://v-us-01.wisestream.io/memfs/e4ade538-7924-4359-81ef-b9d4dd229e91.m3u8
 scr-canaa-mg-3111705,Canaã,Minas Gerais,3111705,retransmissora,88,Canal Futura (720p),CanalFutura.br@SD,45.162.64.114,http://45.162.64.114/FUTURA/index.m3u8
 scr-canaa-mg-3111705,Canaã,Minas Gerais,3111705,retransmissora,88,Canal Gov (720p),CanalGov.br@SD,45.177.114.115,http://45.177.114.115/TV_BRASIL_2/index.m3u8
 scr-canaa-mg-3111705,Canaã,Minas Gerais,3111705,retransmissora,88,Canal Libras (720p),CanalLibras.br@SD,canallibras-stream.ebc.com.br,https://canallibras-stream.ebc.com.br/mux_video_ts/index-1.m3u8
@@ -96,7 +96,7 @@ scr-canaa-mg-3111705,Canaã,Minas Gerais,3111705,retransmissora,88,Canal Ricos (
 scr-capetinga-mg-3112406,Capetinga,Minas Gerais,3112406,retransmissora,82,TV+Pet,TVPlusPet.br@SD,stmv5.samcast.com.br,https://stmv5.samcast.com.br/tvmaispet6354/tvmaispet6354/playlist.m3u8
 scr-fronteira-mg-3127008,Fronteira,Minas Gerais,3127008,retransmissora,88,TV Fronteira (480i),TVFronteira.br@SD,tvfronteira.brasilstream.com.br,https://tvfronteira.brasilstream.com.br/hls/tvfronteira/index.m3u8
 scr-liberdade-mg-3138500,Liberdade,Minas Gerais,3138500,retransmissora,88,TV Liberdade (720p) [Not 24/7],TVLiberdade.br@SD,srv1.paineldevideo.com,https://srv1.paineldevideo.com/liberdaderadioetv/liberdaderadioetv/playlist.m3u8
-scr-mutum-mg-3144003,Mutum,Minas Gerais,3144003,retransmissora,88,SBT Nova Mutum,SBTNovaMutum.br@SD,video09.logicahost.com.br,https://video09.logicahost.com.br/sbtmutum/sbtmutum/playlist.m3u8
+scr-mutum-mg-3144003,Mutum,Minas Gerais,3144003,retransmissora,88,SBT Nova Mutum (818p),SBTNovaMutum.br@SD,video09.logicahost.com.br,https://video09.logicahost.com.br/sbtmutum/sbtmutum/playlist.m3u8
 scr-nova-era-mg-3144706,Nova Era,Minas Gerais,3144706,retransmissora,88,Nova Era TV (1080p) [Not 24/7],NovaEraTV.br@SD,wz3.dnip.com.br:1935,http://wz3.dnip.com.br:1935/novaeratv/novaeratv.sdp/live.m3u8
 scr-piau-mg-3150109,Piau,Minas Gerais,3150109,retransmissora,88,TV Assembleia Piaui,TVAssembleiaPiaui.br@SD,stmv1.srvstm.com,https://stmv1.srvstm.com/piaui8071/piaui8071/playlist.m3u8
 scr-pirapetinga-mg-3151107,Pirapetinga,Minas Gerais,3151107,retransmissora,82,TV+Pet,TVPlusPet.br@SD,stmv5.samcast.com.br,https://stmv5.samcast.com.br/tvmaispet6354/tvmaispet6354/playlist.m3u8
