@@ -1,4 +1,4 @@
-Emissoras no catálogo: 4515
+Emissoras no catálogo: 4516
 Streams no CSV: 2
 Streams aprovados para M3U: 2
 Entradas geradas: 2
