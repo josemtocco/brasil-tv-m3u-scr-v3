@@ -592,9 +592,9 @@
     "idEstacaoPrincipal",
     "redeNacional"
   ],
-  "registros_scr_total": 51636,
+  "registros_scr_total": 51640,
   "registros_tv_filtrados": 38855,
   "emissoras_novas": 0,
-  "emissoras_enriquecidas": 0,
+  "emissoras_enriquecidas": 5,
   "data_utc": "2026-11-26"
 }
